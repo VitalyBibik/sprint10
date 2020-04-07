@@ -25,14 +25,14 @@
                     <div class="form__field">
                         <input class="form__input" type="email" name="email" pattern="\w+[\@\w+\.[a-z]+\s" placeholder="E-Mail" required />
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
-                    </div> <!--\w+\@\w+\.[a-z]+         [a-z0-9-_].*@.*\..*      [-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?--> 
+                    </div> <!----> 
                     <div class="form__field">
                         <input class="form__input" type="tel" name="tel" placeholder="Телефон" pattern="(\+\d|\d)\s?\(?\d{3}\)?\s?-?\d{3}-?\d{2}-?\d{2}" minlength="11" maxlength="18"  required/>
                         <span class="form__error">телефон в формате: +7 (900) 000-00-00</span>
                     </div> <!--  -->
                     <div class="form__field">
-                        <input class="form__input" type="url" name="url" pattern="" placeholder="Ваш сайт" required/>
-                       <!--(http://|https://)(w{3}\.)?(((\d{3}\.){3}\d{3})|\w+\.(ru|com))(:\d{2,5})?(/\w+)+#?--> 
+                        <input class="form__input" type="url" name="url" pattern="^(http://|https://)(www\.)?([A-Za-z0-9\-._])*\.{1}[A-Za-z]{2,3}((\/:[\d]{2,5})?(\/([\wW\-\/#])*)?)" placeholder="Ваш сайт" required/>
+                       <!----> 
                         <span class="form__error">URL в формате: http://mysite.ru</span>
                     </div>
                     <button class="form__button" type="submit">Отправить</button>   
